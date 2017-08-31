@@ -2,16 +2,18 @@
   <div class="hello">
     <h1>{{ message }}</h1>
     <button @click="clicked">Click</button>
+    <button @click="parentClicked">Parent click</button>
   </div>
 </template>
 
 <script lang="ts">
 
-import Vue from 'vue'
+// import Vue from 'vue'
+import Parent from './Parent'
 import ClassComponent from 'vue-class-component'
 
 @ClassComponent({}) // -> It tells Vue this class is a component
-export default class extends Vue {
+export default class extends Parent { // Vue {
 
   // Data properties are written as variables:
   message: string = 'Hello Vue';
@@ -23,12 +25,12 @@ export default class extends Vue {
 
   // Hooks (created, mounted, etc.) are written as methods:
   created() {
-    console.log('created');
+    console.log('Hello -> "created" hook.')
   }
 
   // Methods are written as methods ;)
-  clicked() {
-    console.log('clicked');
+  clicked() {    
+    console.log('Hello -> "clicked"');
   }
 
 }
