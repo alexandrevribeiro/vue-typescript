@@ -1,8 +1,8 @@
 {
   "name": "vue-typescript-starter",
   "version": "1.0.0",
-  "description": "Typescript starter based on the Vue-cli webpack template",
-  "author": "Alex J <alexjovermorales@gmail.com>",
+  "description": "A study purpose application using Vue + TypeScript",
+  "author": "Alexandre Ribeiro <vribeiro.alexandre@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
