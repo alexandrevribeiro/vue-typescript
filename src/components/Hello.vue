@@ -6,6 +6,33 @@
 </template>
 
 <script lang="ts">
+
+import Vue from 'vue'
+import ClassComponent from 'vue-class-component'
+
+@ClassComponent({}) // -> It tells Vue this class is a component
+export default class extends Vue {
+
+  // Data properties are written as variables:
+  message: string = 'Hello Vue';
+
+  // Computed properties are written as standard getters:
+  get fullMessage() {
+      return `${this.message} from Typescript`;
+  }
+
+  // Hooks (created, mounted, etc.) are written as methods:
+  created() {
+    console.log('created');
+  }
+
+  // Methods are written as methods ;)
+  clicked() {
+    console.log('clicked');
+  }
+
+}
+/*
 export default {
   name: 'hello',
   data () {
@@ -30,6 +57,7 @@ export default {
     }
   }
 }
+*/
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
