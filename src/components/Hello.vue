@@ -3,6 +3,9 @@
     <h1>{{ message }}</h1>
     <button @click="clicked">Click</button>
     <button @click="parentClicked">Parent click</button>
+
+    <hr>
+    <router-link to="hello-ts">Hello TS</router-link>
   </div>
 </template>
 
@@ -33,6 +36,12 @@ export default class extends Parent { // Vue {
     console.log('Hello -> "clicked"');
   }
 
+  // This kind of hook needs to be registered in the "hooks.ts"
+  beforeRouteEnter(to, from, next) {
+    console.log('Hello -> "beforeRouteEnter" hook.');
+    console.log(`from: '${from.path}'. to: '${to.path}'.`)
+    next();
+  }
 }
 /*
 export default {
