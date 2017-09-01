@@ -9,6 +9,9 @@
 
     <hr>
     <router-link to="hello-ts">Hello TS</router-link>
+
+    <hr>
+    <child description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
   </div>
 </template>
 
@@ -17,11 +20,15 @@
 // import Vue from 'vue'
 import Parent from './Parent'
 import ClassComponent from 'vue-class-component'
-import colorDirective from '@/directives/color-directive';
+import colorDirective from '@/directives/color-directive'
+import Child from './Child.vue'
 
 @ClassComponent({ // -> It tells Vue this class is a component
   directives: {
     colorDirective
+  },
+  components: {
+    Child
   }
 })
 export default class extends Parent { // Vue {
