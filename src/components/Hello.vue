@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ message }}</h1>
+    <!-- <h1 v-color-directive.background="'#bae4ca'">{{ message }}</h1> -->
+    <h1 v-color-directive="{ color: '#35495e', background: '#bae4ca'}">
+      {{ message }}
+    </h1>
     <button @click="clicked">Click</button>
     <button @click="parentClicked">Parent click</button>
 
@@ -14,8 +17,13 @@
 // import Vue from 'vue'
 import Parent from './Parent'
 import ClassComponent from 'vue-class-component'
+import colorDirective from '@/directives/color-directive';
 
-@ClassComponent({}) // -> It tells Vue this class is a component
+@ClassComponent({ // -> It tells Vue this class is a component
+  directives: {
+    colorDirective
+  }
+})
 export default class extends Parent { // Vue {
 
   // Data properties are written as variables:
