@@ -6,22 +6,32 @@
 
 <script lang="ts">
     import Vue from 'vue'
-    import ClassComponent from 'vue-class-component'
+    // import ClassComponent from 'vue-class-component'
+    import { Component, Prop } from 'vue-property-decorator'
 
     // This class is ONLY used to make TypeScript know the "description"
     // property inside the JS context. If it were used only in the template
     // this class WOULDN'T be necessary.
-    class ChildCmp extends Vue {
-        description: String
-    }
+    // --> This approach is unnecessary when using "vue-property-decorator"
+    // class ChildCmp extends Vue {
+    //     description: String
+    // }
 
-    @ClassComponent({
+    @Component({
         props: {
             description: String
         }
     })
-    export default class extends ChildCmp { // Vue {
+    export default class extends Vue { // ChildCmp {
         msg: String = 'Description: '
+
+        // Using the "Prop" decorator to declare the "prop" as a variable
+        // (which is used ONLY because it's being used inside this class)       
+        // @Prop() description: String 
+
+        // By default "@Prop" takes the variable type as the type of the Property.
+        // But we can explicitly define its Type and a "Default value":
+        @Prop({ type: String, default: 'Default value!!!'}) description: String
 
         // Computed prop as method
         get fullMessage() {
