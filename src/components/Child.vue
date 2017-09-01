@@ -6,7 +6,7 @@
 
 <script lang="ts">
     import Vue from 'vue'
-    // import ClassComponent from 'vue-class-component'
+    // import Component from 'vue-class-component'
     import { Component, Prop } from 'vue-property-decorator'
 
     // This class is ONLY used to make TypeScript know the "description"

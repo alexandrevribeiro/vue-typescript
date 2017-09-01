@@ -19,11 +19,11 @@
 
 // import Vue from 'vue'
 import Parent from './Parent'
-import ClassComponent from 'vue-class-component'
+import Component from 'vue-class-component'
 import colorDirective from '@/directives/color-directive'
 import Child from './Child.vue'
 
-@ClassComponent({ // -> It tells Vue this class is a component
+@Component({ // -> It tells Vue this class is a component
   directives: {
     colorDirective
   },

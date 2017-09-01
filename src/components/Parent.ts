@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import ClassComponent from 'vue-class-component'
+import Component from 'vue-class-component'
 
 // Parent component.
 // Variables and methods may be overridden in the child component,
 // and Hooks (created, mounted, ...) are called both in parent and child.
-@ClassComponent({})
+@Component({})
 export default class extends Vue {
     
     parentClicked() {

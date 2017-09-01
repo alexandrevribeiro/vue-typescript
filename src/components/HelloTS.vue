@@ -7,9 +7,9 @@
 
 <script lang="ts">
     import Vue from 'vue'
-    import ClassComponent from 'vue-class-component'
+    import Component from 'vue-class-component'
     
-    @ClassComponent({})
+    @Component({})
     export default class HelloTS extends Vue {
         created() {
             console.log('HelloTS -> "created" hook.')
