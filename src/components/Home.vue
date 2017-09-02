@@ -2,7 +2,7 @@
     <div>
         <div><router-link to="/route-hooks">Route hooks using TS (open the Console)</router-link></div>
         <div><router-link to="/hierarchy">TS component with hierarchy (parent class)</router-link></div>
-        <!-- <div><router-link to="/directive">TS Directive</router-link></div> -->
+         <div><router-link to="/directive">TS Directive</router-link></div> 
     </div>
 </template>
 
