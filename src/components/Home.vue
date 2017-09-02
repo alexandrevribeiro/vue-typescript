@@ -7,6 +7,7 @@
         <div><router-link to="/two-way">Two-Way model binding with "@Model" decorator</router-link></div>
         <div><router-link to="/watch">Watching data properties using TS</router-link></div>
         <div><router-link to="/di">Vue Dependency Injection using TS</router-link></div>
+        <div><router-link to="/decorators">Custom decorators using TS</router-link></div>
     </div>
 </template>
 
