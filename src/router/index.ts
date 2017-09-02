@@ -9,6 +9,7 @@ import CompWithCheckbox from '@/components/05-two-way-model-binding/CompWithChec
 import UsingWatch from '@/components/06-watching-data-props/UsingWatch.vue'
 import DependencyInjection from '@/components/07-dependency-injection/DependencyInjection.vue'
 import CustomDecorators from '@/components/08-custom-decorators/CustomDecorators.vue'
+import UserAOP from '@/components/09-aop-with-kaop-ts/User.vue'
 
 Vue.use(Router)
 
@@ -23,7 +24,7 @@ export default new Router({
     { path: '/two-way', name: 'two-way', component: CompWithCheckbox },
     { path: '/watch', name: 'watch', component: UsingWatch },
     { path: '/di', name: 'di', component: DependencyInjection },
-    { path: '/decorators', name: 'decorators', component: CustomDecorators }
-
+    { path: '/decorators', name: 'decorators', component: CustomDecorators },
+    { path: '/aop-kaopts', name: 'aop-kaopts', component: UserAOP }
   ]
 })

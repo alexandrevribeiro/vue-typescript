@@ -8,6 +8,7 @@
         <div><router-link to="/watch">Watching data properties using TS</router-link></div>
         <div><router-link to="/di">Vue Dependency Injection using TS</router-link></div>
         <div><router-link to="/decorators">Custom decorators using TS</router-link></div>
+        <div><router-link to="/aop-kaopts">Using AOP with "Kaop-ts"</router-link></div>
     </div>
 </template>
 
