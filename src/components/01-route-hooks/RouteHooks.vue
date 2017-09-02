@@ -1,9 +1,7 @@
 <template>
     <div>
         <span>Look at the "Console".</span>
-        <br>
-        <br>
-        <router-link to="/">Home</router-link>
+        <home-link></home-link>
     </div>
 </template>
 
@@ -11,8 +9,13 @@
 
     import Vue from 'vue'
     import Component from 'vue-class-component'
+    import HomeLink from '@/components/HomeLink.vue'
 
-    @Component // -> It tells Vue this class is a component
+    @Component({ // -> It tells Vue this class is a component
+        components: {
+            HomeLink
+        }
+    })
     export default class extends Vue {
 
     // --> Route hooks MUST be registered using "Component.registerHooks".
