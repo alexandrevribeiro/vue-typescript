@@ -5,6 +5,7 @@ import RouteHooks from '@/components/01-route-hooks/RouteHooks.vue'
 import CompWithParentClass from '@/components/02-comp-with-hierarchy/CompWithParentClass.vue'
 import UsingDirective from '@/components/03-directive/UsingDirective.vue'
 import AnyComp from '@/components/04-child-with-prop/AnyComp.vue'
+import CompWithCheckbox from '@/components/05-two-way-model-binding/CompWithCheckbox.vue'
 
 Vue.use(Router)
 
@@ -15,6 +16,7 @@ export default new Router({
     { path: '/route-hooks', name: 'route-hooks', component: RouteHooks },
     { path: '/hierarchy', name: 'hierarchy', component: CompWithParentClass },
     { path: '/directive', name: 'directive', component: UsingDirective },
-    { path: '/using-prop', name: 'using-prop', component: AnyComp }
+    { path: '/using-prop', name: 'using-prop', component: AnyComp },
+    { path: '/two-way', name: 'two-way', component: CompWithCheckbox }
   ]
 })

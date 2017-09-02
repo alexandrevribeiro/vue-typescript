@@ -1,10 +1,12 @@
 <template>
-    <div class="hello">
-        <input type="checkbox"
-            :value="value"
-            :checked="checked" 
-            @change="changed">
-        {{ title }}
+    <div>
+        <label>
+            <input type="checkbox"
+                :value="value"
+                :checked="checked" 
+                @change="changed">
+            {{ title }}
+        </label>
     </div>
 </template>
 

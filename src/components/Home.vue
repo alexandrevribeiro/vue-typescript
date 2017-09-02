@@ -4,6 +4,7 @@
         <div><router-link to="/hierarchy">TS component with hierarchy (parent class)</router-link></div>
          <div><router-link to="/directive">TS Directive</router-link></div> 
          <div><router-link to="/using-prop">Passing Prop to child component using TS</router-link></div>
+         <div><router-link to="/two-way">Two-Way model binding with "@Model" decorator</router-link></div>
     </div>
 </template>
 
