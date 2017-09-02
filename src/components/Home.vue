@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <div><router-link to="/route-hooks">Route hooks using TS (open the Console)</router-link></div>
+        <!-- <div><router-link to="/hierarchy">TS component with hierarchy</router-link></div>
+        <div><router-link to="/directive">TS Directive</router-link></div> -->
+    </div>
+</template>
+
+<script lang="ts">
+    import Vue from 'vue'
+    import Component from 'vue-class-component'
+
+    @Component
+    export default class Home extends Vue { }
+</script>

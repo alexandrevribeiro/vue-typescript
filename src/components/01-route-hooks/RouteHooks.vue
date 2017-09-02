@@ -1,0 +1,33 @@
+<template>
+    <div>
+        <span>Look at the "Console".</span>
+        <br>
+        <br>
+        <router-link to="/">Home</router-link>
+    </div>
+</template>
+
+<script lang="ts">
+
+    import Vue from 'vue'
+    import Component from 'vue-class-component'
+
+    @Component // -> It tells Vue this class is a component
+    export default class extends Vue {
+
+    // --> Route hooks MUST be registered using "Component.registerHooks".
+    // They're currently being register in the "src/hooks.ts"
+
+    beforeRouteEnter(to, from, next) {
+        console.log('"RouteHooks.vue" -> "beforeRouteEnter" hook.');
+        console.log(`  -> from: '${from.path}'. to: '${to.path}'.`)
+        next();
+    }
+
+    beforeRouteLeave(to, from, next) {
+        console.log('"RouteHooks.vue" -> "beforeRouteLeave" hook.');
+        console.log(`  -> from: '${from.path}'. to: '${to.path}'.`)
+        next();
+    }
+}
+</script>
