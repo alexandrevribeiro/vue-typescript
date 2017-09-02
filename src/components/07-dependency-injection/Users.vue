@@ -7,13 +7,8 @@
 <script lang="ts">
     import Vue from 'vue'
     import { Component, Inject } from 'vue-property-decorator'
-    import HomeLink from '@/components/HomeLink.vue'
 
-    @Component({
-        components: {
-            HomeLink
-        }
-    })
+    @Component
     export default class Users extends Vue {
 
         users = []

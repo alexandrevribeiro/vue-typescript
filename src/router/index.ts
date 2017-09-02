@@ -8,6 +8,7 @@ import AnyComp from '@/components/04-child-with-prop/AnyComp.vue'
 import CompWithCheckbox from '@/components/05-two-way-model-binding/CompWithCheckbox.vue'
 import UsingWatch from '@/components/06-watching-data-props/UsingWatch.vue'
 import DependencyInjection from '@/components/07-dependency-injection/DependencyInjection.vue'
+import CustomDecorators from '@/components/08-custom-decorators/CustomDecorators.vue'
 
 Vue.use(Router)
 
@@ -21,6 +22,8 @@ export default new Router({
     { path: '/using-prop', name: 'using-prop', component: AnyComp },
     { path: '/two-way', name: 'two-way', component: CompWithCheckbox },
     { path: '/watch', name: 'watch', component: UsingWatch },
-    { path: '/di', name: 'di', component: DependencyInjection }
+    { path: '/di', name: 'di', component: DependencyInjection },
+    { path: '/decorators', name: 'decorators', component: CustomDecorators }
+
   ]
 })
