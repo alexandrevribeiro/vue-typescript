@@ -6,6 +6,7 @@ import CompWithParentClass from '@/components/02-comp-with-hierarchy/CompWithPar
 import UsingDirective from '@/components/03-directive/UsingDirective.vue'
 import AnyComp from '@/components/04-child-with-prop/AnyComp.vue'
 import CompWithCheckbox from '@/components/05-two-way-model-binding/CompWithCheckbox.vue'
+import UsingWatch from '@/components/06-watching-data-props/UsingWatch.vue'
 
 Vue.use(Router)
 
@@ -17,6 +18,7 @@ export default new Router({
     { path: '/hierarchy', name: 'hierarchy', component: CompWithParentClass },
     { path: '/directive', name: 'directive', component: UsingDirective },
     { path: '/using-prop', name: 'using-prop', component: AnyComp },
-    { path: '/two-way', name: 'two-way', component: CompWithCheckbox }
+    { path: '/two-way', name: 'two-way', component: CompWithCheckbox },
+    { path: '/watch', name: 'watch', component: UsingWatch }
   ]
 })
