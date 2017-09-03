@@ -18,7 +18,7 @@
 
         created() {
             this.http.get('http://jsonplaceholder.typicode.com/users')
-                .then(data => this.users = data.data);
+                .then(data => { this.users = data.data });
         }
     }
 </script>
