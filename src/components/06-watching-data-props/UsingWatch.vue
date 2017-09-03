@@ -13,11 +13,7 @@
     import { Component, Watch } from 'vue-property-decorator'
     import HomeLink from '@/components/HomeLink.vue'
 
-    @Component({
-        components: {
-            HomeLink
-        }
-    })
+    @Component({ components: { HomeLink }}) // -> It tells Vue this class is a component
     export default class extends Vue {
 
         clicks: number = 0

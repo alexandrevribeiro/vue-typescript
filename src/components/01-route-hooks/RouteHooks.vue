@@ -11,11 +11,7 @@
     import Component from 'vue-class-component'
     import HomeLink from '@/components/HomeLink.vue'
 
-    @Component({ // -> It tells Vue this class is a component
-        components: {
-            HomeLink
-        }
-    })
+   @Component({ components: { HomeLink }}) // -> It tells Vue this class is a component
     export default class extends Vue {
 
     // --> Route hooks MUST be registered using "Component.registerHooks".

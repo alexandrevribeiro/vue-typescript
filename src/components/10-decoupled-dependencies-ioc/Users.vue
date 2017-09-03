@@ -21,7 +21,7 @@
     // component because Vue is the one who takes care of the object creation.
     // Due to this, we use "lazyInject" instead (which uses the "inversify-inject-decorators")
 
-    @Component({ components: { HomeLink }})
+    @Component({ components: { HomeLink }}) // -> It tells Vue this class is a component
     export default class Users extends Vue {
 
         users = []

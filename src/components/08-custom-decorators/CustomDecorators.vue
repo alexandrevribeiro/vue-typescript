@@ -28,11 +28,7 @@
             console.log('   Component: ', component);        
     })
 
-    @Component({
-        components: {
-            HomeLink
-        }
-    })
+    @Component({ components: { HomeLink }}) // -> It tells Vue this class is a component
     export default class CustomDecorator extends Vue {
 
         @Log('Any message')

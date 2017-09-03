@@ -11,11 +11,6 @@
     import HomeLink from '@/components/HomeLink.vue'
     import ChildComp from './ChildComp.vue'
 
-    @Component({ // -> It tells Vue this class is a component
-        components: {
-            HomeLink,
-            'child': ChildComp
-        }
-    })
+    @Component({ components: { HomeLink }}) // -> It tells Vue this class is a component
     export default class extends Vue { }
 </script>
